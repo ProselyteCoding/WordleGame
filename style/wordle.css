@@ -1,0 +1,64 @@
+/* TODO: 在本文件中编写您的 CSS 代码 */
+h1{                     /*标题*/
+    font-family: Palo Slab Condensed Bold;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 95px;
+}
+#refresh {              /*重试按钮*/
+    overflow: hidden;
+    height: 40px;
+    margin-top: 30px;
+    font-size: large;
+    font-weight: bold;
+}
+.wordle-header{         /*标题导航栏部分*/
+    display: grid;
+    grid-template-columns: 1fr 4% 2%;
+    border-bottom: 1px solid;
+}
+/*------------分割线----------*/
+.wordle-body{           /*中间显示格部分*/
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px;
+}
+.guess-row{             /*用来显示猜测过程的section*/
+    text-align: center;
+    font-size: 40px;
+}
+.guess{                 /*每一个显示格div*/
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bolder;
+    width: 59px;
+    height: 59px;
+    background-color: white;/* 错误颜色 #787C7E 错位颜色#C9B458 正确颜色#6AAA64*/
+    color: black;
+    border: 3px solid #D3D6DA;
+    vertical-align: middle;
+}
+/*-----------分割线---------*/
+.key-row{               /*显示键盘的section*/
+    text-align: center;
+    font-size: 40px;
+    justify-items: center;
+}
+.keyboard{              /*每一个键的按钮button*/
+    font-size: 22px;
+    font-weight: bolder;
+    height: 55px;
+    min-width: 40px;
+    max-width: 150px;
+    background-color: #D3D6DA;/* 错误颜色 #787C7E 未用颜色#D3D6DA 正确颜色#6AAA64*/
+    color: black;/* 未用颜色black 已用颜色white*/
+    border-radius: 5px;
+    border: 0;
+}
+.wordle-footer {        /*页脚键盘部分*/
+    display: grid;
+    grid-template-rows: 63px 63px 63px;
+    justify-items: center;
+    text-align: center;
+}
